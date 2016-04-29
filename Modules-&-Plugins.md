@@ -1,1 +1,1 @@
-* [[Poll|poll]]
+* [[Poll Plugin|Poll]]
