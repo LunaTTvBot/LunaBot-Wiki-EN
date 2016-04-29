@@ -6,7 +6,8 @@ Moderators and the Broadcaster are able to create polls. You can manage them lik
 Let's take a deeper look how it works:
 
 ### Create a poll
-First you have to create at least one poll. This can be made with a title (which is in general a question) or without. To create a poll with title use this syntax:
+First you have to create at least one poll. This can be made with a title (which is in general a question) or without.  
+To create a poll with title use this syntax:
 ```
 !poll create(TITLE) OPT1|OPT2|...
 ```
@@ -44,7 +45,7 @@ To start the poll with id 1 for 5 minutes type:
 ```
 
 ### Abort a poll
-May you want to abort a poll.
+May you want to abort a poll.  
 To abort the poll with id 1 type:
 ```
 !poll abort:1
@@ -52,7 +53,7 @@ To abort the poll with id 1 type:
 The poll is now in aborted state. To restart this poll use the restart command or reset the poll and start it later. There are no results available for aborted polls.
 
 ### Restart a poll
-Once you have aborted a poll you need to run the restart or reset followed by start command to reuse this poll. The restart command let you specify the time parameter. Of course, this command can also be used for finished polls to restart them.
+Once you have aborted a poll you need to run the restart or reset followed by start command to reuse this poll. The restart command let you specify the time parameter. Of course, this command can also be used for finished polls to restart them.  
 To restart poll with id 1 for 2 minutes type:
 ```
 !poll restart:1 2
@@ -63,7 +64,7 @@ To restart poll with id 1 for 5 minutes type:
 ```
 
 ### Reset a poll
-If a poll is aborted or finished and you want to restart it you can use the reset command to reset the poll to created state. This makes sense for finished polls that needs to be started later but the results should not longer be available.
+If a poll is aborted or finished and you want to restart it you can use the reset command to reset the poll to created state. This makes sense for finished polls that needs to be started later but the results should not longer be available.  
 To reset the poll with id 1 type:
 ```
 !poll reset:1
@@ -76,8 +77,8 @@ If you did a mistake or you not longer need a poll you can delete it with:
 ```
 
 ### Get results & detailed information
-Once a poll has been finished successfully the bot will print which option has the most votes and how many percent that was. If you want to get a list of how many votes the other options got, you can use the result command.
-To get detailed information about poll 1 type:
+Once a poll has been finished successfully the bot will print which option has the most votes and how many percent that was. If you want to get a list of how many votes the other options got, you can use the result command.  
+To get detailed information about poll 1 type:  
 ```
 !poll result:1
 ```
